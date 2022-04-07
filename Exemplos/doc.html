@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>querySelector</title>
+	 <script type="text/javascript">
+	 	funciton add() {
+	 		var texto = document.querySelector("#texto").value;
+	 		var myLi = document.querySelector('li');
+	 		myLi.innerText = texto;
+	 		document.querySelector("ul").appendChild(myLi);
+
+	 	}
+	 </script>
+</head>
+<body>
+	Adicionando elementos com querySelector
+	<ul>
+		<li>1INFD</li>
+		<li>2INFD</li>
+		<li>3INFD</li>
+	</ul>
+
+	<br>
+	Turma: <br>
+	<input type="text" id="texto">
+	<button type="button" onclick="add();">+</button>
+
+
+
+
+
+</body>
+</html>
