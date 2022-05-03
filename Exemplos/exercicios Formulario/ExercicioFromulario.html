@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicio - Formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body style="background-color: rgb(87, 87, 87);">
+    <h1 align="center"> Cadastro de Pessoas </h1>
+
+    <form action="cadastro.php" method="post">  
+        <fieldset style= "background-color: rgb(158, 158, 158, 0.808)">
+            <legend><br><br><h2>Dados Pessoais</h2></legend>
+                
+                <label for="nome"> Nome Completo: </label><br>
+                <input type="text" name="nome" id="nome" size="30" maxlength="50" minlength="3" placeholder="Insira o nome" spellcheck required>
+                <br><br>
+
+                <label for="dataNasc"> Data de Nascimento: </label><br>
+                <input type="date" id="dataNasc" name="dataNasc" required>
+                <br><br>
+
+                <label for="sexo"> Sexo: </label> <br>
+                F <input type="radio" name="sexo" id="sexo" value="Fem">
+                M <input type="radio" name="sexo" id="sexo" value="Masc">
+                <br><br>
+
+                <label for="cargo"> Cargo: </label> <br>
+                <input type="text" name="cargo" id="cargo" placeholder="Insira o cargo" required>
+                <br><br>
+
+                <label for="estadoCiv"> Estado Civil: </label><br>
+                <select name="estadoCiv" id="estadoCiv">
+                    <option selected>Selecione o Estado Civil</option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Viuvo">Viúvo</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <br><br>
+                
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+
+                <label for="numTel"> Telefone: </label>
+                <input type="tel" name="numTel" id="numTel" minlength="11" maxlength="20" required>
+                <br><br>
+        </fieldset>  
+        <br>
+        <input type="submit" name="btnEnviar" id="btnLimpar"> 
+        <input type="reset"  name="btnLimpar" id="btnLimpar">
+    </form>
+
+</body>
+</html>
