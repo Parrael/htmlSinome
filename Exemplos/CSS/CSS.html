@@ -15,6 +15,7 @@
                 color: red;
                 font-size: 30px;
                 background-color: lightgray;
+                text-transform: capitalize; /*lowercase, uppercase ou capitalize*/
             }
 
             ul {
@@ -54,14 +55,24 @@
                 font-style: italic;
                 font-size: 25px;
                 font-family: "Smooch", cursive;
+                text-decoration: overline underline; /*overline, underline ou line-through*/
+                text-decoration-color: blueviolet;
+
             }
 
             #titulo{
                 font-weight: bold;
                 color: black;
                 font-variant: small-caps;
-                font-family: "Noto Sans JP", sans-serif;
+                text-shadow: 5px 5px 2px gray, -5px -5px 2px red; /*Horizontal, vertical, desfoque, cor (padrão = preto), os valores podem ser negativos*/
+                /*font-family: "Noto Sans JP", sans-serif;*/
+
             }
+            #rodape{
+                font-size: 10px;
+                text-align: right;
+            }
+
         </style>
 
     </head>
@@ -141,5 +152,6 @@
             de 1962, e autorizado a ser instalado e a entrar em funcionamento 
             pela Resolução C.E.E. nº 46/1966 e Deliberação C.E.E. nº 12/1970, 
             Diário Oficial de 29/01/72.</p>
+        <p id="rodape"> Cotil- colégio técnico de Limeira </p>
     </body>
 </html>
