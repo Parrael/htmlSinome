@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Smooch&display=swap');
+    
     <head>
         <title>CSS - Incorporado</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="EspecificaoExterna.css">
 
         <style type="text/css">
-            p {
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Smooch&display=swap');
+           
+           p {
                 /* color: rgba(199, 61, 174, 0.7) */
                 /*color: #FC0A71*/
                 /*color rgb(199, 61, 174)*/
@@ -57,7 +59,7 @@
                 font-family: "Smooch", cursive;
                 text-decoration: overline underline; /*overline, underline ou line-through*/
                 text-decoration-color: blueviolet;
-
+                letter-spacing: 15px; /*Pode ser valor negativo para colar as letras*/
             }
 
             #titulo{
@@ -66,18 +68,24 @@
                 font-variant: small-caps;
                 text-shadow: 5px 5px 2px gray, -5px -5px 2px red; /*Horizontal, vertical, desfoque, cor (padrão = preto), os valores podem ser negativos*/
                 /*font-family: "Noto Sans JP", sans-serif;*/
+                word-spacing: -15px;
 
             }
             #rodape{
                 font-size: 10px;
-                text-align: right;
+                /*text-align: right;*/
+                direction: rtl;
+            }
+
+            #pot{
+                vertical-align: super;
             }
 
         </style>
 
     </head>
 
-    <body>
+    <body style="background-color: cadetblue;">
         <h1>EXEMPLO 1</h1>
         <p style="color: red; background-color: lightblue;">
             COTIL - UNICAMP
@@ -147,11 +155,16 @@
 
         <h1>Exemplo 8 - format com CSS</h1>
         <p id="titulo">História do cotil.txt</p>
-        <p style= "color: black;" >O <span id="textoDestacado">Colégio Técnico de Limeira – COTIL</span>, da Universidade Estadual de 
-            Campinas, foi criado pela <span id="titulo">Lei Estadual nº 7.655</span>, de 28 de dezembro 
-            de 1962, e autorizado a ser instalado e a entrar em funcionamento 
-            pela Resolução C.E.E. nº 46/1966 e Deliberação C.E.E. nº 12/1970, 
-            Diário Oficial de 29/01/72.</p>
+        <p style= "color: black; text-indent: 20px; line-height: 50px;">O <span id="textoDestacado">Colégio Técnico de Limeira – COTIL</span>, 
+            da Universidade Estadual de Campinas, foi criado pela <span id="titulo">Lei Estadual nº 7.655</span>, de 28 de dezembro 
+            de 1962, e autorizado a ser instalado e a entrar em funcionamento pela Resolução C.E.E. nº 46/1966 e Deliberação 
+            C.E.E. nº 12/1970, Diário Oficial de 29/01/72.</p>
         <p id="rodape"> Cotil- colégio técnico de Limeira </p>
+        <p>Sup: 2<span id="pot">3</span> <br>Sub: 2<span style="vertical-align: sub;">3</span></p>
+
+
+
     </body>
+
+        
 </html>
