@@ -12,9 +12,36 @@
         }
 
         body{
+            height: 100vh;
             margin: 0px;
             background-image: url("https://th.bing.com/th/id/R.25c46755880ea8102f25a273790a6d9b?rik=buTyYdgWKIYK3Q&riu=http%3a%2f%2fsupercurioso.com%2fwp-content%2fuploads%2f2014%2f07%2fEl-lago-verde-que-aparece-y-desaparece.jpg&ehk=H3rk7vcdc9feDfFgokF7WiAyvLtCxRgrg2uMhutnLiY%3d&risl=&pid=ImgRaw&r=0");
             background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        h1{
+            background-image: url("https://th.bing.com/th/id/R.25c46755880ea8102f25a273790a6d9b?rik=buTyYdgWKIYK3Q&riu=http%3a%2f%2fsupercurioso.com%2fwp-content%2fuploads%2f2014%2f07%2fEl-lago-verde-que-aparece-y-desaparece.jpg&ehk=H3rk7vcdc9feDfFgokF7WiAyvLtCxRgrg2uMhutnLiY%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            /*chrome e safari*/
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            /*IE - edge*/
+            -ms-background-clip: text;
+            -ms-text-fill-color: transparent;
+
+            /*mozilla firefox*/
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+
+            /*opera*/
+            -o-background-clip: text;
+            -o-text-fill-color: transparent;
         }
 
         #menu{
@@ -26,7 +53,7 @@
 
         .formatDiv{
             background-color: rgb(127, 255, 212,0.7);
-            width: 200px;
+            width: 400px;
             height: 170px;
             visibility: visible; /*hidden ou visible*/
             display: block; /*block ou none*/
@@ -41,7 +68,7 @@
             padding-bottom: 10px;
             padding-left: 10px;
             */
-            padding: 5px 20px 15px 20px;
+            padding: 20px 20px 20px 20px;
             /*padding: 20px;*/
 
             /*margem externa*/
@@ -57,7 +84,7 @@
     </div>
 
     <div class="formatDiv">
-        Cotil - Unicamp
+        <h1>Cotil - Unicamp</h1>
         <br>
         Colégio Técnico de Limeira ou também conhecido como COTIL é uma das duas instituições técnicas e de 
         Ensino Médio mantidas pela Universidade Estadual de Campinas localizada no campus da cidade de Limeira 
