@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../Midias/iconeForm.png">
+    <title>Formulário Sorteio</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h2><b>Dados Pessoais</b></h2></legend>
+
+        <label for="nome"> Nome: </label><br>
+        <input type="text" name="nome" id="nome" size="30" maxlength="40" minlenght="5" placeholder="Digite seu nome" spellcheck required>
+        <br><br>
+        
+        <label for="idade"> Idade: </label><br>
+        <input type="number" name="idade" id="idade" size="2" min="14" max="110" step="2" value="18"required>
+        <br><br>
+
+        <label for="telefone"> Telefone: </label><br>
+        <input type="tel" name="telefone" id="telefone" size="20" placeholder="Digite seu telefone" required>
+        <br><br>
+
+        <label for="genero"> Gênero: </label><br>
+        <select name="genero" id="genero">
+            <option selected> Selecione seu gênero   </option>
+            <option value="Fem"> Feminino </option> 
+            <option value="Masc"> Masculino </option>
+            <option value="nBin"> Não binário </option>
+            <option value="pND"> Prefiro não dizer </option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><h2><b>Questionário Íbis</b></h2></legend>
+
+        Como você conheceu nosso time?<br>
+        <textarea rows="5" cols="40" spellcheck="true" maxlength="240"></textarea>
+        <br><br>
+
+        <label for="tempo"> Há quanto tempo conheceu o Íbis? </label><br>
+        <input type="text" name="tempo" id="tempo" size="30" maxlength="40" minlenght="3" placeholder="Responda aqui" required>
+        <br><br>
+
+        <label for="jogPref"> No time atual, qual jogador é o seu preferido? </label><br>
+        <input type="text" name="jogPref" id="jogPref" size="30" maxlength="40" minlenght="5" placeholder="Digite um nome" spellcheck required>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h2><b> Caso você seja sorteado: </b></h2></legend>
+
+        <label for="apelido"> Qual o nome que gostaria na camiseta? </label><br>
+        <input type="text" name="apelido" id="apelido" size="30" maxlength="40" minlenght="5" placeholder="Digite um apelido" spellcheck required>
+        <br><br>
+
+        <label for="numero"> Qual número você gostaria de ter na camiseta? </label><br>
+        <input type="number" name="numero" id="numero" size="2" maxlength="3" min="00" max="999" step="1" value="00" required>
+
+    </fieldset>
+</body>
+</html>
