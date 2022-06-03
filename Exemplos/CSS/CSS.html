@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CSS - Incorporado</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="EspecificaoExterna.css">
+
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Smooch&display=swap');
+           
+           p {
+                /* color: rgba(199, 61, 174, 0.7) */
+                /*color: #FC0A71*/
+                /*color rgb(199, 61, 174)*/
+                color: red;
+                font-size: 30px;
+                background-color: lightgray;
+                text-transform: capitalize; /*lowercase, uppercase ou capitalize*/
+            }
+
+            ul {
+                color:blue;
+                font-size: 20px;
+            }
+
+            #texto1 {
+                color: red;
+                font-size: 15px;
+                background-color: yellow;
+            }
+
+            .formatacao1 {
+                color: lightblue;
+                background-color: darkblue;
+            }
+
+            #formatacao2 {
+                font-size: 30px;
+            }
+
+            .formatacao3 {
+                font-weight: bold;
+            }
+
+            p.format1 {
+                color:#ff0000 ;
+                background-color: lightgray;
+            }
+
+            .x {
+                background-color: black;
+                color: white;
+            }
+            #textoDestacado{
+                font-style: italic;
+                font-size: 25px;
+                font-family: "Smooch", cursive;
+                text-decoration: overline underline; /*overline, underline ou line-through*/
+                text-decoration-color: blueviolet;
+                letter-spacing: 15px; /*Pode ser valor negativo para colar as letras*/
+            }
+
+            #titulo{
+                font-weight: bold;
+                color: black;
+                font-variant: small-caps;
+                text-shadow: 5px 5px 2px gray, -5px -5px 2px red; /*Horizontal, vertical, desfoque, cor (padrão = preto), os valores podem ser negativos*/
+                /*font-family: "Noto Sans JP", sans-serif;*/
+                word-spacing: -15px;
+
+            }
+            #rodape{
+                font-size: 10px;
+                /*text-align: right;*/
+                direction: rtl;
+            }
+
+            #pot{
+                vertical-align: super;
+            }
+
+        </style>
+
+    </head>
+
+    <body style="background-color: cadetblue;">
+        <h1>EXEMPLO 1</h1>
+        <p style="color: red; background-color: lightblue;">
+            COTIL - UNICAMP
+        </p>
+
+        <p>
+            COTIL - UNICAMP
+        </p>
+        <br>
+
+        <h1> EXEMPLO 2 - Incorporado</h1>
+        <p>COTIL - UNICAMP </p>
+
+        <p>Simone</p>
+
+        <p>DAW1</p>
+
+        <ul>
+            <li>Aluno 1</li>
+            <li>Aluno 2</li>
+        </ul>
+
+        <ul>
+            <li>Aluno 1</li>
+            <li>Aluno 2</li>
+        </ul>
+        <br>
+
+        <h1>EXEMPLO 3 - ID</h1>
+
+        <p>COTIL - UNICAMP</p>
+        <p id="texto1">Simone</p>
+        <p>DESENVOLVIMENTO DE SISTEMAS</p>
+
+        <ul id="texto1">
+            <li>texto 1</li> 
+            <li>texto 2</li> 
+        </ul>
+        <br>
+
+        <h1>EXEMPLO 4 - Classe</h1>
+
+        <p class="formatacao3">COTIL - UNICAMP</p>
+        <p class="formatacao1 formatacao 3" id="formatacao2">Simone</p>
+        <!-- é possivel misturar classes e colocar id e classe no mesmo texto-->
+
+        <ul class="formatacao1">
+            <li>Aluno 1</li>
+            <li>Aluno 2</li>
+        </ul>
+
+        <h1>EXEMPLO 5</h1>
+
+        <p>COTIL - UNICAMP</p>
+        <p class="format1"> Profa. Simone</p>
+        <span class="format1"> Curso de Desenvolvimento de Sistemas</span>
+
+        <h1>EXEMPLO 6 - Externo</h1>
+        <p class="cor"> Aprendendo CSS com arquivo externo.</p>
+
+        <h1>Exemplo 7</h1>
+        <p class="cor">COTIL - UNICAMP</p>
+        <p class="x">Profa. Simone</p>
+        <span style="font-style: 30px; text-decoration: undeline;">
+            Aula de DAW III
+        </span> 
+
+        <h1>Exemplo 8 - format com CSS</h1>
+        <p id="titulo">História do cotil.txt</p>
+        <p style= "color: black; text-indent: 20px; line-height: 50px;">O <span id="textoDestacado">Colégio Técnico de Limeira – COTIL</span>, 
+            da Universidade Estadual de Campinas, foi criado pela <span id="titulo">Lei Estadual nº 7.655</span>, de 28 de dezembro 
+            de 1962, e autorizado a ser instalado e a entrar em funcionamento pela Resolução C.E.E. nº 46/1966 e Deliberação 
+            C.E.E. nº 12/1970, Diário Oficial de 29/01/72.</p>
+        <p id="rodape"> Cotil- colégio técnico de Limeira </p>
+        <p>Sup: 2<span id="pot">3</span> <br>Sub: 2<span style="vertical-align: sub;">3</span></p>
+
+
+
+    </body>
+
+        
+</html>

@@ -1,0 +1,14 @@
+	 .conteudoInicial{
+	    	  color: lightslategray; 
+		 	  background-color: lightcyan; 
+			  border-radius: 5px; 
+           padding-top: 30px; 
+			  padding-bottom: 20px; 
+			  padding-left: 20px; 
+			}
+
+ 			.conteudoCursos { 
+ 				margin-top: 20px; 
+ 				background-color: lightcyan; 
+ 				border-radius: 5px; 
+ 			} 
