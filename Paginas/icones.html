@@ -9,13 +9,101 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-    *{
+        *{
         box-sizing: content-box;
         
-    }
-    p{
+        }
+        p{
         padding: 10px;
-    }
+        }
+
+        body {
+            color: rgba(221, 213, 226, 1);
+            background-image: url("../Midias/fundo.png"); /*placeholder de fundo*/
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            text-align: justify;
+
+            margin: 0%;
+            
+        }
+
+        h1{
+            font-variant: small-caps;
+            padding-left: 15px;
+            text-align: center;
+        }
+
+        blockquote{
+            padding: 15px;
+            font-family: 'Caveat',cursive ;
+            font-size: 23px;
+            background-color: rgba(191, 47, 66, 0.4);
+            
+        }
+
+        .menuTopo{
+            overflow: hidden;
+            background-color: rgba(20, 24, 31, 1);
+            position: fixed; 
+            top: 0;
+            width: 100%;
+            text-transform: capitalize;
+            text-align: center;
+            margin: 0%;
+        }
+        
+        .menuTopo a {
+            float: left;
+            display: block;
+            color: #ddd5e2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: all, 0.3s;
+        }
+
+        .menuTopo :hover{
+            background: rgba(221, 213, 226, 1);
+            color: rgba(20, 24, 31, 1);
+        }
+
+        .menuBaixo{
+            color: rgba(221, 213, 226, 1);
+            overflow: hidden;
+            background-color: rgba(20, 24, 31, 1);
+            bottom: 0; 
+            width: 100%; 
+            text-align: center;
+            padding: 5px 10px 5px 10px;
+            transition: all, 0.3s;
+        }
+
+        .formataDiv{
+            background-color: rgba(20, 24, 31, 0.8);
+            text-align: justify;
+            margin-top: 80px;
+            margin-bottom: 50px; 
+            margin-left: 30px;
+            
+        }
+
+        .centralizarImagem { 
+            display: flex;
+            display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -o-flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+
 </style>
 
 <body>
@@ -26,15 +114,19 @@
     https://pt.wikipedia.org/wiki/Mauro_Shampoo             -   Mauro Shampoo
     -->
     
-    <div style="background-color:rgba(170, 48, 27, 0.7); width: 200px; height: 110px; padding: 10px; ">
-        <ul>
-            <li><a href="#rildo">Rildo</a></li>
-            <li><a href="#bodinho">Bodinho</a></li>
-            <li><a href="#vava">Vavá</a></li>
-            <li><a href="#mShampoo">Mauro Shampoo</a></li>
-        </ul>
+    <div class="menuTopo">
+            <img src="../Midias/ibisBrasao.png" height="70px" width="70px" alt="logo" align="left"usemap="#linkWiki">
+            <map name="linkWiki">
+                <area shape="circle" coords="50, 50, 52" href="https://pt.wikipedia.org/wiki/%C3%8Dbis_Sport_Club" target="_blank">
+            </map>
+            <a href="#rildo">Rildo</a></li>
+            <a href="#bodinho">Bodinho</a></li>
+            <a href="#vava">Vavá</a></li>
+            <a href="#mShampoo">Mauro Shampoo</a></li>
+        
     </div>
     
+<div class="formataDiv">
     <h1 id="rildo">Rildo</h1>
     <p>
         <b>Rildo da Costa Menezes</b>, conhecido apenas como <b><i>Rildo</i></b>, foi um futebolista brasileiro que atuava como 
@@ -56,8 +148,13 @@
         Foi um dos convocados por Vicente Feola para disputar a <b>Copa do Mundo de 1966</b>. Na competição, disputou apenas um jogo, 
         marcando o gol do Brasil na derrota por 3–1 para Portugal. No total, foram 49 jogos pela Seleção entre 1963 e 1969.<br><br>
 
+        <div class="centralizarImagem">
+        <img src="../Midias/rildo.png" align="center" height="400px" width="500px">
+        </div>
     </p>
+</div>
 
+<div class="formataDiv">
     <h1 id="bodinho">Bodinho</h1>
     <p>
         <b>Nílton Coelho da Costa</b>, mais conhecido como <b><i>Bodinho</i></b> foi um futebolista brasileiro que atuava como atacante.<br><br>
@@ -76,8 +173,15 @@
 
         Bodinho ainda teve exitosa passagem pela <b>Seleção Brasileira</b>, onde conquistou o Campeonato Pan-Americano de 1956, 
         na Cidade do México. Marcou três gols em cinco partidas. Bodinho faleceu em 2007, aos 79 anos, vítima de <i>hepatite</i>.<br><br>
+    <div class="centralizarImagem">
+        <img src="../Midias/bodinho.png" align="center" height="400px" width="380px">
+    </div>
     </p>
 
+    
+</div>
+
+<div class="formataDiv">
     <h1 id="vava">Vavá</h1>
     <p>
         <b>Edvaldo Izídio Neto</b>, conhecido por <b><i>Vavá</i></b>, foi um futebolista brasileiro que atuava como atacante.<br><br>
@@ -101,8 +205,13 @@
         duas finais de Copa do Mundo seguidas</u>. E além de Vavá, apenas outros três atletas marcaram gols em duas finais de Copas,
         embora não de modo consecutivo: Pelé, Breitner e Zidane. Vencedor dos dois mundiais de seleções que disputou, ficou 
         conhecido como <b><i>Leão da Copa</i></b>.<br><br>
+        <div class="centralizarImagem">
+            <img src="../Midias/Vavá.png" align="center">
+        </div>
     </p>
+</div>
 
+<div class="formataDiv">
     <h1 id="mShampoo">Mauro Shampoo</h1>
     <p>
         <b>Mauro Teixeira Thorpe</b>, mais conhecido como <b><i>Mauro Shampoo</i></b>, é um cabeleireiro e 
@@ -114,21 +223,24 @@
         no Recife, como engraxate. Nos fins de tarde, jogava peladas na areia. Ainda na sua juventude, aprendeu o ofício 
         de cabeleireiro. Numa dessas peladas, foi convidado e jogou pelo time infantil do Náutico. Depois de cinco anos, 
         acabou dispensado e foi para a Associação Atlética Santo Amaro. Após a sua saída, o Santo Amaro chegou a ser 
-        <i>vice-campeão da chamada Taça de Bronze</i>, equivalente à atual Série C do Brasileirão, em 1981.<br><br>
+        <i>vice-campeão da chamada Taça de Bronze</i>, equivalente à atual Série C do Brasileirão, em 1981.<br>
+
+        <div class="centralizarImagem">
+            <img src="../Midias/mauroShampoo.png" align="center" height="500px" width="480px">
+        </div>
+        <br>
 
         Em 1980 Shampoo foi para o <b>Íbis</b>. Durante os catorze anos em que o meia foi titular do Pássaro Preto, 
         ele teria marcado <u><b>um único gol</b></u>, na derrota para o Ferroviário por implacáveis 8–1. Logo após marcar o tento, 
         Shampoo declarou ter realizado <i>a obra de sua vida</i> e concretizado seu maior sonho.<br><br><br>
 
-    </p>
-        <div style="padding: 15px; font-family: 'Caveat', cursive; font-size: 23px;">
-            "Só fiz um gol na carreira, e mesmo assim dizem que foi contra. O goleiro deu rebote e a bola caiu na marca do 
+        <blockquote>"Só fiz um gol na carreira, e mesmo assim dizem que foi contra. O goleiro deu rebote e a bola caiu na marca do 
             pênalti. Fiz o gol e corri o estádio todinho. O estádio estava lotado... lotado de espaço vazio. Perdemos de 8x1, 
             mas eu fiz um golaço. Não tem registro, por isso dizem que foi contra. Dói no coração. É o gol da minha vida."
-            <p align="right">~ Mauro Shampoo</p>
-        </div>
-
-        <br><br>
+            <p align="right">~ Mauro Shampoo</p></blockquote>
+    
+    </p>
+        
     <p>
         Em 2018, a <i>Globo Nordeste</i> procurou e não encontrou registro do tal lance em fontes como jornais e súmulas, além de 
         verificar várias incongruências nas lembranças de Shampoo, mantendo o gol histórico como uma lenda do futebol local.<br><br>
@@ -138,8 +250,9 @@
         e que conta a sua trajetória de vida.<br><br>
 
         Foi candidato a vereador em Recife pelo DEM, em 2012, e ficou como suplente.<br><br>
+
     </p>
-    <h3>Homenagens à Mauro Shampoo:</h3>
+    <h4>Homenagens à Mauro Shampoo:</h4>
     <p>
         Música <i>"A Incrível História de Mauro Shampoo"</i>, de <b>Oswaldo Montenegro</b>.<br>
         Mauro Shampoo foi o homenageado do <b>CINEfoot Tour 2013 Recife</b>.<br>
@@ -149,8 +262,10 @@
         Em 2017, o escritor e historiador <b>Luiz Antônio Simas</b> lançou o livro <i>"Ode a Mauro Shampoo e outras histórias da várzea"</i>, 
         que conta algumas histórias curiosas envolvendo o futebol.<br>
     </p>
+</div>
 
-    <div style="background-color:rgba(170, 48, 27, 0.7); width: 300px; height: 150px; padding: 10px; ">
+    <h3 style="text-align: center;">Para mais informações, acesse:</h3>
+    <div class="menuBaixo">
         <h3 style="text-align: center;">Para mais informações, acesse:</h3>
         <ul>
             <li><a href="https://pt.wikipedia.org/wiki/Rildo_da_Costa_Menezes" target="_blank">Rildo</a></li>
