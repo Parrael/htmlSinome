@@ -10,14 +10,6 @@
 
     </head>
     <style>
-        
-        table{
-            background-color: rgba(230, 76, 85, 0.8);
-            border-color: rgba(191, 47, 66, 1);
-            color: rgba(20, 24, 31, 1);
-            margin: 0%;
-           
-        }
 
         
         h2{
@@ -26,9 +18,7 @@
             text-align: center;
         }
 
-        .img {
-            border: 4px solid rgba(191, 47, 66, 1);
-        }
+      
         
         .formatSobreNos{
             background-color: rgba(20, 24, 31, 1);
@@ -39,9 +29,12 @@
             display: -ms-flex;
             display: -moz-flex;
             display: -o-flex;
+            text-align: center;
 
-            justify-content: center;
+            ;
             align-items: center;
+            
+            
             
         }
 
@@ -64,10 +57,11 @@
             margin-left: 15px;  
             width: 60%;
             height: 20%;
-            background-color: rgba(20, 24, 31, 0.8);
+            background-color: rgba(230, 76, 85, 0.4);
             display: block;
             padding: 10px 20px 10px 20px;
             margin: 10px auto;
+            border-radius: 15px;
         }
 
 
@@ -82,13 +76,13 @@
             <map name="linkWiki">
                 <area shape="circle" coords="50, 50, 52" href="https://pt.wikipedia.org/wiki/%C3%8Dbis_Sport_Club" target="_blank">
             </map>
-            <a href="#uniforme">uniforme</a>
             <a href="./formSorteio.html" target="_blank">sorteio</a>
             <a href="./escalacao.html">escalação</a>
             <a href="./icones.html">ícones</a>
+            <a href="#uniforme">uniforme</a>
             <a href="#mascote">mascote</a>
-            <a href="#sobrenos">sobre nós</a>
-            <br>
+            <a href="#sobrenos">Saiba mais</a>
+            
         </div>
 
         
@@ -96,6 +90,7 @@
         
         <div class="formataDiv">
             <h1 align="center">Íbis Sport Club</h1>
+
             <p>
                 O <b>Íbis Sport Club</b>, é um clube de futebol de uma cidade chamada <b>Paulista-PE</b>, o mesmo ficou conhecido por receber o 
                 título de <i>"pior time do mundo"</i> em 1984 após ficar 3 anos e 11 meses sem vencer uma partida oficial de futebol. 
@@ -113,7 +108,8 @@
         </div>
         
 
-        
+        <br><hr>
+        <div class="formataDiv">
             <h2 id="uniforme">Uniforme</h2>
             <table cellpadding="15px" cellspacing="20x" border="5px" width="100%">
                 <tr>
@@ -123,7 +119,7 @@
                         <p align="right">
                             Para adquirir a sua camiseta, segue abaixo um link para venda em loja parceira:<br>
                             <br><br><br>
-                            <a align="center" href="https://www.futfanatics.com.br/camisa-passaro-preto-ibis-i-2021?parceiro=2934&gclid=CjwKCAjwv-GUBhAzEiwASUMm4m7in-pe7beyWmyYxfkZYXyWKyBW2O_8tbIN2osbt8faAW-HI-gbiBoCt5IQAvD_BwE&variant_id=1614407" target="_blank">Clique Aqui</a>
+                            <a align="center" href="https://www.futfanatics.com.br/camisa-passaro-preto-ibis-i-2021?parceiro=2934&gclid=CjwKCAjwv-GUBhAzEiwASUMm4m7in-pe7beyWmyYxfkZYXyWKyBW2O_8tbIN2osbt8faAW-HI-gbiBoCt5IQAvD_BwE&variant_id=1614407" target="_blank">Clique Aqui!</a>
                         </p>
                     </td>
                     <td>
@@ -132,39 +128,43 @@
                         <p align="left"class="tab">
                         Para adquirir a sua camiseta, segue abaixo um link para venda em loja parceira:<br>
                         <br><br><br>
-                        <a href="https://www.futfanatics.com.br/camisa-passaro-preto-ibis-ii-2021" target="_blank">Clique Aqui</a>
+                        <a href="https://www.futfanatics.com.br/camisa-passaro-preto-ibis-ii-2021" target="_blank">Clique Aqui!</a>
                         </p>
                     </td>
                 </tr>
             </table>
+            <div class="divSorteio">
             <p>
-                <div class="divSorteio">
                 Estamos sorteando um uniforme do Íbis: <br> 
                 Para participar do sorteio, acesse e preencha o formulário abaixo:<br>
-                <a href="./formSorteio.html">Clique aqui!!</a>
-                </div>
+                <span><a href="./formSorteio.html">Clique aqui!!</a></span>
             </p>
+        </div>
+    </div>
+    <br><hr>
 
-            <div class="formataDiv">
-            <h2 id="uniforme">Títulos</h2>
-            </div>
         <!--
             Mascote (derrotinha)
         -->
-        <br>
         <div class="formataDiv">
             <h2 id="mascote">Mascote</h2>
             <b>Derrotinha</b> nosso querido mascote, representando o Íbis dentro e fora de campo, é 
+            <br><br>
+
+            <div class="centralizarImagem">
+                <img class="img" src="../Midias/derrotinhaClassica.png" align="center" height="50%" width="70%">
+            </div>
         </div>
 
         <!--
             Sobre Nós: -> preciso centralizar dps
         --> 
 
-        <br><hr>
+        <hr><br>
         <div class="formatSobreNos">
-        <h2 id="sobrenos">Saiba mais: </h2>
-        <table class="formatSobreNos" align="center" >
+            <h2 id="sobrenos">Saiba mais: </h2>
+            <br>
+        <table class="formatSobreNos">
             <tr>
                 <td>
                     <figure>

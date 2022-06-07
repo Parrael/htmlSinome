@@ -17,10 +17,26 @@ text-align: justify;
 
 margin: 0px;
 
+
 }
 
+a {
+    color: rgba(221, 213, 226, 1);
+    text-decoration: none;
+    
+}
+
+.img {
+    border: 4px solid rgba(191, 47, 66, 1);
+}
 p {
     padding: 10px 20px;
+}
+/*toquei*/
+h1 {
+   font-variant: small-caps;
+    text-align: center;
+    padding-left: 15px;
 }
 
 h2{
@@ -34,8 +50,11 @@ h2{
     text-align: justify;
     margin-top: 80px;
     margin-bottom: 30px; 
-    margin-left: 30px;
-    width: 96%;
+    margin-left: 5%;
+    margin: 30%, 30%;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
     
     
     
@@ -59,6 +78,8 @@ h2{
     top: 0;
     width: 100%;
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
@@ -70,6 +91,7 @@ h2{
     padding: 14px 16px;
     text-decoration: none;
     transition: all, 0.3s;
+    
 }
 
 .menuTopo :hover{
@@ -86,4 +108,25 @@ h2{
     width: 100%; 
     text-align: center;
     
+}
+
+ .centralizarImagem { 
+            display: flex;
+            display: -webkit-flex; 
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -o-flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+   
+table{
+    background-color: rgba(230, 76, 85, 0.8);
+    border-color: rgba(191, 47, 66, 1);
+    color: rgba(20, 24, 31, 1);
+    margin: 5%;
+    margin: 30%, 30%;
+    width: 90%;
+   
 }
