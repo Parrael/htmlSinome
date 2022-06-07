@@ -22,7 +22,7 @@ margin: 0px;
 
 a {
     color: rgba(221, 213, 226, 1);
-    text-decoration: none;
+    text-decoration: dotted;
     
 }
 
@@ -107,6 +107,8 @@ h2{
     bottom: 0; 
     width: 100%; 
     text-align: center;
+    display: flex;
+    flex-direction: column;
     
 }
 
