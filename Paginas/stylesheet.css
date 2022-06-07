@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+color: rgba(221, 213, 226, 1);
+background-image: url("../Midias/fundo.png"); 
+background-size: 100%;
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: large;
+text-align: justify;
+
+margin: 0px;
+
+}
+
+p {
+    padding: 10px 20px;
+}
+
+.formataDiv{
+    background-color: rgba(20, 24, 31, 0.8);
+    text-align: justify;
+    margin-top: 80px;
+    margin-bottom: 50px; 
+    margin-left: 30px;
+    
+}
+.menu{
+    width: 100%;
+    color: rgba(230, 76, 85, 1);
+    background-color: rgb(191, 47, 66, 1);
+    padding: 0px, 0px, 0px, 0px;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+
+.menuTopo{
+    overflow: hidden;
+    background-color: rgba(20, 24, 31, 1);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.menuTopo a {
+    float: left;
+    display: block;
+    color: #ddd5e2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all, 0.3s;
+}
+
+.menuTopo :hover{
+    background: rgba(221, 213, 226, 1);
+    color: rgba(20, 24, 31, 1);
+    
+}
+
+.menuBaixo{
+    color: rgba(221, 213, 226, 1);
+    overflow: hidden;
+    background-color: rgba(20, 24, 31, 1);
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+    
+}
