@@ -9,10 +9,35 @@
 
     <title>Sorteio Uniforme</title>
 </head>
+<style>
+    
+    fieldset{
+        background-color: rgba(20, 24, 31, 0.8);
+        margin-left: 5%;
+        width: 90%;
+    }
+    .fieldset{
+        margin-top :50px;
+        text-align: center;
+    }
+</style>
 <body>
 
+    <div class="menuTopo" style="margin: 50;">
+
+        <img src="../Midias/ibisBrasao.png" height="70px" width="70px" alt="logo" align="left"usemap="#linkWiki">
+        <map name="linkWiki">
+            <area shape="circle" coords="50, 50, 52" href="https://pt.wikipedia.org/wiki/%C3%8Dbis_Sport_Club" target="_blank">
+        </map>
+        <a href="./pagPrincipal.html" target="_blank">Home</a>
+        <a href="./escalacao.html">escalação</a>
+        <a href="./icones.html">ícones</a>
+        <a href="#mascote">mascote</a>
+        <br>
+    </div>
 
     <form>
+<div class="fieldset">
     <fieldset>
         <legend><h2><b>Dados Pessoais</b></h2></legend>
 
@@ -65,9 +90,11 @@
         <input type="number" name="numero" id="numero" size="2" maxlength="3" min="00" max="999" step="1" value="00" required>
 
     </fieldset>
+
     <br><br>
     <input type="submit" name="btnEnviar" value="Enviar">
     <input type="reset" name="btnLimpar" value="Limpar">
+</div>
     <br><br>
 </body>
 </html>

@@ -10,25 +10,6 @@
 
     </head>
     <style>
-        /** {
-                box-sizing: border-box;
-            }
-            
-         body {
-            color: rgba(221, 213, 226, 1);
-            background-image: url("../Midias/fundo.png"); 
-            background-size: 100%;
-            background-repeat: no-repeat;
-            
-            background-attachment: fixed;
-
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: large;
-            text-align: justify;
-
-            margin: 0px;
-
-        }*/
         
         table{
             background-color: rgba(230, 76, 85, 0.8);
@@ -38,9 +19,6 @@
            
         }
 
-        /*p {
-            padding: 10px 20px;
-        }*/
         
         h2{
             font-variant: small-caps;
@@ -51,54 +29,6 @@
         .img {
             border: 4px solid rgba(191, 47, 66, 1);
         }
-
-        /*.menu{
-            width: 100%;
-            color: rgba(230, 76, 85, 1);
-            background-color: rgb(191, 47, 66, 1);
-            padding: 0px, 0px, 0px, 0px;
-            margin-bottom: 50px;
-            width: 100%;
-            font-size: larger;
-            text-transform: capitalize;
-        }
-
-        
-        .menuTopo{
-            overflow: hidden;
-            background-color: rgba(20, 24, 31, 1);
-            position: fixed; 
-            top: 0;
-            width: 100%;
-            text-transform: capitalize;
-            text-align: center;
-        }
-        
-        .menuTopo a {
-            float: left;
-            display: block;
-            color: #ddd5e2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: all, 0.3s;
-        }
-
-        .menuTopo :hover{
-            background: rgba(221, 213, 226, 1);
-            color: rgba(20, 24, 31, 1);
-            
-        }
-
-        .menuBaixo{
-            color: rgba(221, 213, 226, 1);
-            overflow: hidden;
-            background-color: rgba(20, 24, 31, 1);
-            bottom: 0; 
-            width: 100%; 
-            text-align: center;
-            
-        }*/
         
         .formatSobreNos{
             background-color: rgba(20, 24, 31, 1);
@@ -115,15 +45,6 @@
             
         }
 
-        /*.formataDiv{
-            background-color: rgba(20, 24, 31, 0.8);
-            text-align: justify;
-            margin-top: 80px;
-            margin-bottom: 50px; 
-            margin-left: 30px;
-            
-        }*/
-
         .centralizarImagem { 
             display: flex;
             display: -webkit-flex; 
@@ -133,6 +54,20 @@
 
             justify-content: center;
             align-items: center;
+        }
+
+        .divSorteio{
+            text-align: center;
+            
+            font-variant: small-caps;    
+        
+            margin-left: 15px;  
+            width: 60%;
+            height: 20%;
+            background-color: rgba(20, 24, 31, 0.8);
+            display: block;
+            padding: 10px 20px 10px 20px;
+            margin: 10px auto;
         }
 
 
@@ -156,7 +91,6 @@
             <br>
         </div>
 
-        <!-- tentativa de logo, arrumo dps-->
         
         <!-- Informações do Time -->
         
@@ -185,7 +119,7 @@
                 <tr>
                     <td>
                         <h3 align="center">Uniforme Principal:</h3>
-                        <figure><img src="../Midias/uniformeSCPretoNovo.png" align="left" height="50%" width="50%"></figure>
+                        <figure><img src="../Midias/uniformeSCPretoNovo.png" align="left" height="70%" width="70%"></figure>
                         <p align="right">
                             Para adquirir a sua camiseta, segue abaixo um link para venda em loja parceira:<br>
                             <br><br><br>
@@ -194,7 +128,7 @@
                     </td>
                     <td>
                         <h3 align="center">Uniforme Alternativo:</h3>
-                        <figure><img src="../Midias/uniformeSCBrancoNovo.png" align="right" height="50%" width="50%"></figure>
+                        <figure><img src="../Midias/uniformeSCBrancoNovo.png" align="right" height="70%" width="70%"></figure>
                         <p align="left"class="tab">
                         Para adquirir a sua camiseta, segue abaixo um link para venda em loja parceira:<br>
                         <br><br><br>
@@ -204,20 +138,24 @@
                 </tr>
             </table>
             <p>
+                <div class="divSorteio">
                 Estamos sorteando um uniforme do Íbis: <br> 
                 Para participar do sorteio, acesse e preencha o formulário abaixo:<br>
                 <a href="./formSorteio.html">Clique aqui!!</a>
+                </div>
             </p>
 
-
+            <div class="formataDiv">
             <h2 id="uniforme">Títulos</h2>
-
+            </div>
         <!--
             Mascote (derrotinha)
         -->
         <br>
-        <h2 id="mascote">Mascote</h2>
-        <b>Derrotinha</b> nosso querido mascote, representando o Íbis dentro e fora de campo, é 
+        <div class="formataDiv">
+            <h2 id="mascote">Mascote</h2>
+            <b>Derrotinha</b> nosso querido mascote, representando o Íbis dentro e fora de campo, é 
+        </div>
 
         <!--
             Sobre Nós: -> preciso centralizar dps

@@ -3,10 +3,11 @@
 }
 
 body {
+height: 100vh;
 color: rgba(221, 213, 226, 1);
 background-image: url("../Midias/fundo.png"); 
 background-size: 100%;
-background-repeat: no-repeat;
+/*background-repeat: no-repeat;*/
 
 background-attachment: fixed;
 
@@ -22,12 +23,21 @@ p {
     padding: 10px 20px;
 }
 
+h2{
+    font-variant: small-caps;
+    padding-left: 15px;
+    text-align: center;
+}
+
 .formataDiv{
     background-color: rgba(20, 24, 31, 0.8);
     text-align: justify;
     margin-top: 80px;
-    margin-bottom: 50px; 
+    margin-bottom: 30px; 
     margin-left: 30px;
+    width: 96%;
+    
+    
     
 }
 .menu{
