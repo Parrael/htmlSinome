@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <style type="text/css">
+    body{
+        background-color: gray;
+    }
+    .box{
+        background-color: black;
+        margin-top: 50px;
+        padding-left: 15px;
+        width: 25%;
+        border-width: 3px;
+        border-style: inset;
+        color:rgba(0, 255, 76, 0.4);
+        border-color: rgb(5, 685, 502);
+        border-width: 20px;
+
+        /*border-radius: 90px;*/
+        /*border-x-y-radius
+        x-> top, bottom
+        y -> left, right*/
+
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 70px;
+
+        /*Podemos .... uma borda de forma resumida:
+        EXEMPLO:
+        Opção 1: 
+        border-top: 2px dotted black;
+        
+        Opção 2:
+        border-width: 2px;
+        border-color: black;
+        border-style: dotted;*/
+    }
+        table {
+            border: 1px solid red;
+            border-collapse: separate; /*separate ou collapse*/
+            /*border-spacing: 10px; -> só usa quando border-collapse for separate*/ 
+        }
+        table td {
+            border: 3px dotted green;
+            
+        }
+     
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <h1>
+            COTIL - UNICAMP
+        </h1>
+        O cotil oferece cursos técnicos nas áreas de:
+        <ul>
+            <li>Desenvolvimento de sistemas</li>
+            <li>Enfermagem</li>
+            <li>Geodésia</li>
+            <li>Mecânica</li>
+            <li>Edificações</li>
+            <li>Qualidade</li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <td>Célula 1</td>
+            <td>Célula 2</td>
+        </tr>
+        <tr>
+            <td>Célula 3</td>
+            <td>Célula 4</td>
+        </tr>
+    </table>
+</body>
+</html>
