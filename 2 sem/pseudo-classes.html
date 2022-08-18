@@ -35,7 +35,6 @@
         Tabela
         */
         input:focus{
-            background-color: ;
             border: 1px solid #002147;
             border-radius: 10px;
             color: #FFFFFF;
@@ -48,6 +47,34 @@
         }
         img:hover{
             width: 300px;
+        }
+
+        button {
+          background-color: blueviolet;
+          border-radius: 7px;
+          color: white;
+          text-shadow: 1px 1px black;
+          font-size: 20px;
+          font-weight: bold;
+          width: 100%;
+          padding: 10px 0px 0px 10px;
+          text-align: center;
+
+          /*Efeito de saltado:*/
+          border-bottom: 5px solid blueviolet;
+          border-right: 5px solid blueviolet;
+
+          border-top: 5px solid purple;
+          border-left: 5px solid purple;
+        }
+
+        button:hover{
+          border-radius: 10px;
+          border-bottom: 5px solid purple;
+          border-right: 5px solid purple;
+
+          border-top: 5px solid blueviolet;
+          border-left: 5px solid blueviolet;
         }
             /*
             Tabela 2
@@ -71,6 +98,33 @@
 
             .formataInput{
                 width: 100%;
+                height: 30px;
+                margin-top: 5px;
+                background-color: lightgray;
+                border-radius: 10px;
+            }
+            
+            input:hover{
+              background-color: lightgray;
+              border-color: darkorchid;
+              border-width: 5px;
+            }
+
+            input:focus{
+              background-color: white;
+              border-color: darkorchid;
+              color: darkorchid;
+            }
+
+            body{
+              height: 100vh;
+              /*background:linear-gradient(green,blue, yellow);*/
+              /*background: radial-gradient(red, white, white);*/
+              background: linear-gradient(to top, white, green, yellow, black);
+            }
+
+            div{
+              background-color: gray;
             }
         
 
@@ -78,7 +132,7 @@
 
 </head>
 <body>
-    <!--
+    <!-- 
     <style>
         body{
             background-color: gray;
@@ -168,10 +222,9 @@
     </div>
 
     <div class="box-campos">
-		<input type="submit" value="Cadastrar">
+		<button type="submit">Cadastrar</button> 
     </div>
 	</form>
 </div>
-     
 </body>
 </html>
