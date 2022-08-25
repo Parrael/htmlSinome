@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformações</title>
+    <style type="text/css">
+        @keyframes animacao1{
+            from{
+                opacity: 0;
+            }to{
+                opacity: 1;
+            }
+        }
+        
+        div{
+            margin-top:100px;
+            margin-left: 100px;
+            float: left;
+            animation: animacao1 10s;
+        }
+        div:hover{
+            /*transform: scale(1.5, 1.5);*/
+            transform: rotate(720deg);
+            /*transform: translate(40px, 30px);*/
+            /*transform: skew(-20deg,0deg);*/
+            transition-duration: 1s;
+            transition-delay: 0.2s;
+            transition-timing-function: linear;
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div><img src="imagens/imagemPinguim.jpg"></div>
+    <div><img src="imagens/pinguinIcon.png"></div>
+    <div><img src="imagens/ytIcon.png"></div>
+
+
+</body>
+</html>
