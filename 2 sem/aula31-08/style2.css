@@ -1,0 +1,97 @@
+body{
+
+}
+div{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    animation: animacao1 10s;
+    animation-fill-mode: backwards;
+
+    margin-left: 1000px;
+
+    animation-name: rodar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*animation-delay: 0.5s;*/
+}
+div:hover{
+    animation-play-state: paused;
+}
+
+.tes{
+    width: 500px;
+    height: 500px;
+    background: blue;
+    color: aliceblue;
+    animation: animacao2 10s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animacao1{
+    0%{
+        left: 0px;
+        top: 0px;
+        
+    }
+    25%{
+        left: 250px;
+        top: 0px;
+    }
+    50%{
+        left: 250px;
+        top: 250px;  
+    }
+    75%{
+        left: 0px;
+        top: 250px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes animacao2{
+    0%{
+        left: 0px;
+        top: 0px;
+        background: violet;
+        color: aquamarine;
+    }
+    25%{
+        left: 250px;
+        top: 0px;
+        background: blue;
+        color:red;
+    }
+    50%{
+        left: 250px;
+        top: 250px;
+        background: orange;
+        color: goldenrod;
+    }
+    75%{
+        left: 0px;
+        top: 250px;
+        background: green;
+        color: yellow;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+        background: black;
+        color: darkcyan;
+    }
+}
+@keyframes rodar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+/*https://animate.style/*/
