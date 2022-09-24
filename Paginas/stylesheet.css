@@ -85,11 +85,13 @@ h2{
     width: 100%;
     text-transform: capitalize;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
 }
 
-.menuTopo a {
+.menuTopo a{
     float: left;
     display: block;
     color: #ddd5e2;
@@ -116,16 +118,39 @@ h2{
 }
 
  .centralizarImagem { 
-            display: flex;
-            display: -webkit-flex; 
-            display: -ms-flex;
-            display: -moz-flex;
-            display: -o-flex;
+        display: flex;
+        display: -webkit-flex; 
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -o-flex;
 
-            justify-content: center;
-            align-items: center;
-        }
+        justify-content: center;
+        align-items: center;
+}
+
+/* web kit q ta dando errado
+.centralizarImagem2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-image: url("../Midias/mauroShampoo.png");
+}
    
+ .Shampoo{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  max-width: 50%;
+  max-height: 50%;
+  padding: 20px 40px;
+ }     */ 
+ 
+
 table{
     background-color: rgba(230, 76, 85, 0.8);
     border-color: rgba(191, 47, 66, 1);
@@ -135,3 +160,5 @@ table{
     width: 90%;
    
 }
+
+

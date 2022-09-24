@@ -13,12 +13,30 @@
     
     fieldset{
         background-color: rgba(20, 24, 31, 0.8);
-        
     }
     .fieldset{
         margin-top :50px;
         text-align: center;
     }
+    input:focus{
+        background-color: gray;
+        color: white;
+    }
+    label{
+        font-weight: bold;
+    }
+
+    @media print {
+        body {
+            background-color: white; 
+            color: black;           
+        }
+
+        .menuTopo{
+            display: none;
+            /*color:  #ff0000;*/ 
+        }
+    } 
 
 </style>
 <body>
