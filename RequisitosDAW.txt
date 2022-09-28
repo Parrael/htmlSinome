@@ -1,0 +1,27 @@
+- Pseudo-classes 
+	No site: No menu do topo das páginas
+	No código: .menuTopo na folha externa de CSS
+- Formatação de forms
+	No site: Na página do sorteio
+	No código: No style no topo da página formSorteio
+- Box-shadow
+	No site: Imagens dos jogadores na página dos ícones
+	No código: .img na folha externa de CSS
+- Gradientes 
+	No site: Uniformes na página principal
+	no código: .formataTd no topo da página pagPrincipal
+- Transições/animações
+	No site: Na imagem do Íbis na página principal
+	no código: CSS inline na imagem na pagPrincipal
+- Prefixos
+	No site: "backdrop-filter" na imagem do Shampoo na página dos ícones
+	no código: .div1, .container e .box na folha externa de CSS
+- Flexbox (pelo menos 3 propriedades)
+	No site: No menu do topo das páginas
+	No código: .menuTopo na folha externa de CSS
+- Media query
+	No site: No topo da página principal e na classe .div1 na folha externa de CSS
+	No código: Na imagem do Shampoo nos ícones e nos uniformes na página principal 
+- Media print
+	No site: Na página do sorteio
+	No código: No topo da página principal              

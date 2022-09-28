@@ -21,7 +21,7 @@ margin: 0px;
 }
 
 hr{
-    height: 1px;
+    height: 0.16vh;
     background-color: rgba(230, 76, 85, 0.8);
     border: none;
 }
@@ -33,44 +33,43 @@ a {
 }
 
 .img {
-    border: 4px solid rgba(191, 47, 66, 1);
+    box-shadow: rgba(191, 47, 66) -0.5em 0.5em 1em;
 }
 p {
-    padding: 10px 20px;
+    padding: 1.6vh 3.2vh;
 }
 /*toquei*/
 h1 {
    font-variant: small-caps;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 2.4vh;
 }
 
 h2{
     font-variant: small-caps;
-    padding-left: 15px;
+    padding-left: 2.4vh;
     text-align: center;
 }
 
 .formataDiv{
     background-color: rgba(20, 24, 31, 0.8);
     text-align: justify;
-    margin-top: 80px;
-    margin-bottom: 30px; 
+    margin-top: 5%;
+    margin-bottom: 5%; 
     margin-left: 5%;
     margin: 30%, 30%;
     width: 90%;
-    border-radius: 10px;
-    padding: 10px;
-    
-    
-    
+    border-radius: 1.6vh;
+    padding: 1.6vh;
 }
+
+
 .menu{
     width: 100%;
     color: rgba(230, 76, 85, 1);
     background-color: rgb(191, 47, 66, 1);
     padding: 0px, 0px, 0px, 0px;
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
     width: 100%;
     font-size: larger;
     text-transform: capitalize;
@@ -96,7 +95,7 @@ h2{
     display: block;
     color: #ddd5e2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2.24vh 2.56vh;
     text-decoration: none;
     transition: all, 0.3s;
     
@@ -128,28 +127,44 @@ h2{
         align-items: center;
 }
 
-/* web kit q ta dando errado
-.centralizarImagem2{
+.div1{
+    height: 80vh;
+    width: 76.8vh;
+    margin-left: 30%;
+    background-image: url("../Midias/mauroShampoo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(191, 47, 66) -0.5em 0.5em 1em;
+}
+/*smartphones*/
+@media (min-width: 320px) and (max-width: 1000px){
+    .div1{
+        height: 70vh;
+        width: 50vh;
+        margin-left: 10%;
+    }
+}
+
+.container{
     align-items: center;
     display: flex;
-    justify-content: center;
-    height: auto;
-    background-image: url("../Midias/mauroShampoo.png");
+    justify-content:center;
+    height: 100%;
+    width: 100%;
 }
-   
- .Shampoo{
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  font-family: sans-serif;
-  text-align: center;
-  line-height: 1;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  max-width: 50%;
-  max-height: 50%;
-  padding: 20px 40px;
- }     */ 
- 
+.box {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.8vh;
+    text-align: center;
+    line-height: 1;
+    /*Webkit*/
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-height: 50%;
+    padding: 3.2vh 6.4vh;
+}
 
 table{
     background-color: rgba(230, 76, 85, 0.8);
@@ -159,6 +174,7 @@ table{
     margin: 30%, 30%;
     width: 90%;
    
+
 }
 
 

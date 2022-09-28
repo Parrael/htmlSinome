@@ -15,7 +15,7 @@
 
         h2{
             font-variant: small-caps;
-            padding-left: 15px;
+            padding-left: 2.4vh;
             text-align: center;
         }
         
@@ -38,14 +38,14 @@
             
             font-variant: small-caps;    
         
-            margin-left: 15px;  
+            margin-left: 2.4vh;  
             width: 60%;
             height: 20%;
             background-color: rgba(230, 76, 85, 0.4);
             display: block;
-            padding: 10px 20px 10px 20px;
-            margin: 10px auto;
-            border-radius: 15px;
+            padding: 1.6vh 3.2vh 1.6vh 3.2vh;
+            margin: 1.6vh auto;
+            border-radius: 2.4vh;
         }
         
         .formataTd{
@@ -54,13 +54,31 @@
             color: white;
         }
 
+        .formataUniforme{
+            background-color: rgba(20, 24, 31, 0.8);
+            text-align: justify;
+            margin-top: 5%;
+            margin-bottom: 5%; 
+            margin-left: 5%;
+            margin: 30%, 30%;
+            width: 90%;
+            border-radius: 2%;
+            padding: 2%;  
+        }
+        @media (min-width: 320px) and (max-width: 800px){
+            .formataTd{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
     </style>
 
     <body>
         <!--Âncoras:-->
         <div class="menuTopo" style="margin: 50;">
 
-            <img src="../Midias/ibisBrasao.png" height="70px" width="70px" alt="logo" align="left"usemap="#linkWiki">
+            <img src="../Midias/ibisBrasao.png" height="5%" width="5%" alt="logo" align="left"usemap="#linkWiki">
             <map name="linkWiki">
                 <area shape="circle" coords="50, 50, 52" href="https://pt.wikipedia.org/wiki/%C3%8Dbis_Sport_Club" target="_blank">
             </map>
@@ -115,9 +133,9 @@
 
 
         <br><hr>
-        <div class="formataDiv">
+        <div class="formataUniforme">
             <h2 id="uniforme">Uniforme</h2>
-            <table cellpadding="15px" cellspacing="20x" border="5px" width="100%">
+            <table cellpadding="15%" cellspacing="10%" border="5%" width="100%">
                 <tr>
                     <td class="formataTd">
                         <h3 align="center">Uniforme Principal:</h3>
