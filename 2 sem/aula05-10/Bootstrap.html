@@ -10,23 +10,65 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <style type="text/css">
-        .myCorContainer{
-            background-color: rgba(255, 0, 255, 0.5);
-            height: 100vh;
-        }
+        
     </style>
 </head>
 <body>
-    <div class="container myCorContainer">
-        <h2>Exemplo 1 de BootStrap</h2>
-        <p>Teste de parágrafo</p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
-        </ul>
-    </div>
+    <div class="container" style="background-color: pink;">
+      
+        <!-- imagens - usando o grid system -->
+  
+        <!-- 1a linha do grid system -->
+        <div class="row">
+          <div class="col"><h1>Notícias</h1></div>
+        </div>
+  
+        <!-- 2a linha do grid system -->
+        <div class="row"> 
+           
+          <!-- 1a coluna da 2a linha do grid system --> 
+          <div class="col-md-4 col-sm-12">
+            <img src="../imagens/imagemPinguim.jpg" class="img-fluid img-thumbnail">
+            <br>
+            Isso é um pinguim.
+          </div>
+  
+          <!-- 2a coluna da 2a linha do grid system --> 
+          <div class="col-md-4 col-sm-12">
+            <img src="../imagens/cigarro.jpg" class="img-fluid img-thumbnail">
+            <br>
+            Isso é uma caixa de cigarro.          
+          </div>
+  
+          <!-- 3a coluna da 2a linha do grid system --> 
+          <div class="col-md-4 col-sm-12">
+            <img src="../imagens/padre.png" class="img-fluid img-thumbnail">
+            <br>
+            Esse é o candidato padre.         
+          </div>
+  
+        </div>
+  
+        <!-- 3a coluna da 2a linha do grid system --> 
+        <div class="row">
+          <!-- 1a coluna da 3a linha do grid system --> 
+          <div class="col-md-4 col-sm-12">
+            <img src="../imagens/moro.jpg" class="img-fluid img-thumbnail">
+            <br>
+            Esse é o Sérgio Moro, ex do Bolsonaro.
+          </div>
+  
+          <!-- 2a coluna da 3a linha do grid system --> 
+          <div class="col-md-4 col-sm-12">
+            <img src="../imagens/lulabolsonaro.jpg" class="img-fluid img-thumbnail">
+            <br>
+            Esse é o atual do Bolsonaro, Lulinha.          
+          </div>
+         
+        </div>
+  
+        <!-- fim imagens -->   
+  
+       </div>
 </body>
 </html>
