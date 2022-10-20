@@ -14,9 +14,15 @@
 
     <style type="text/css">
         .myContainer{
-            background-color: #f9aeb3;
+            background-color: #CC0000;
             border-radius: 5px;
             padding: 20px;
+        }
+        .card img{
+          height: 250px;
+        }
+        .card{
+          margin-bottom: 20px;
         }
     </style>
 </head>
@@ -24,7 +30,7 @@
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="#"><img src="imagens/unicampBranco.png" width="40px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,7 +73,7 @@
       <!--Inicio container Inicial-->
       <div class="container mt-3">
           <div class="row">
-              <div class="col-md-2 col-sm-12"></div>
+              <div class="col-md-2 col-sm-12 pt-2"> <i class="bi bi-house-door-fill text-danger"></i></div>
               <div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-phone-fill text-danger"></i>(19) 9999-8989</div>
               <div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-envelope-fill text-danger"></i>cotil@cotil.unicamp.br</div>
               <div class="col-md-4 col-sm-12">
@@ -84,8 +90,86 @@
         <!--Fim Container Inicial-->
 
         <!--Container cursos-->
-        <div class="container">
-          <h3 class="myContainer display-6">Nossos Cursos</h3>
+        <div class=" container myContainer">
+          <h3 class="display-6">Nossos Cursos</h3>
+          
+          <!--Primeira linha do Grid System-->
+          <div class="row">
+              <!--Primeira col da primeira linha-->
+              <div class="col-md-4 col-sm-12">
+              <div class="card">
+                <img src="imagens/edificacoes.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Edificações</h5>
+                  <p class="card-text">Curso de pedreiro</p>
+                  <a href="edificacoes.html" class="btn btn-danger">Conheça o curso</a>
+                </div>
+              </div>
+            </div>
+              <!--Segunda col da primeira linha-->
+              <div class="col-md-4 col-sm-12">
+                <div class="card">
+                <img src="imagens/enfermagem.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Enfermagem</h5>
+                  <p class="card-text">Curso de enfermeiro</p>
+                  <a href="enfermagem.html" class="btn btn-danger">Conheça o curso</a>
+                </div>
+              </div>
+            </div>
+              <!--Terceira col da primeira linha-->
+              <div class="col-md-4 col-sm-12">
+                <div class="card">
+                <img src="imagens/geodesia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Geodésia</h5>
+                  <p class="card-text">Curso de maconheiro</p>
+                  <a href="geodesia.html" class="btn btn-danger">Conheça o curso</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Fim da primeira linha-->
+
+          <!--Segunda linha do Grid System-->
+          <div class="row">
+            <!--Primeira col da segunda linha-->
+            <div class="col-md-4 col-sm-12">
+            <div class="card">
+              <img src="imagens/informatica.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Desenvolvimento de Sistemas</h5>
+                <p class="card-text">Curso de fazer programa</p>
+                <a href="edificacoes.html" class="btn btn-danger">Conheça o curso</a>
+              </div>
+            </div>
+          </div>
+            <!--Segunda col da segunda linha-->
+            <div class="col-md-4 col-sm-12">
+              <div class="card">
+              <img src="imagens/mecanica.jpg" class=card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mecânica</h5>
+                <p class="card-text">Curso de mecânico</p>
+                <a href="enfermagem.html" class="btn btn-danger">Conheça o curso</a>
+              </div>
+            </div>
+          </div>
+            <!--Terceira col da segunda linha-->
+            <div class="col-md-4 col-sm-12">
+              <div class="card">
+              <img src="imagens/qualidade.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Qualidade</h5>
+                <p class="card-text">Curso de quem não faz nada</p>
+                <a href="geodesia.html" class="btn btn-danger">Conheça o curso</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--Fim da segunda linha-->
         </div>
         <!--Fim do container cursos-->
 
