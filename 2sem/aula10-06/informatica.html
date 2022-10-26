@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cotil - Unicamp </title>
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <!--Import de icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        .myContainer{
+            background-color: #d73641;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .card img{
+          height: 250px;
+        }
+        .card{
+          margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="imagens/unicampBranco.png" width="40px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="ExBootStrap.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nossaEscola.html">Nossa Escola</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="informatica.html">Desenvolvimento de Sistemas</a></li>
+                  <li><a class="dropdown-item" href="edificcoes.html">Edificações</a></li>
+                  <li><a class="dropdown-item" href="enfermagem.html">Enfermagem</a></li>
+                  <li><a class="dropdown-item" href="geodesia.html">Geodesia</a></li>
+                  <li><a class="dropdown-item" href="mecanica.html">Mecanica</a></li>
+                  <li><a class="dropdown-item" href="qualidade.html">Qualidade</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="estagios.html">Estágios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="contato.html"> Contato </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button type="button" class="btn btn-outline-danger"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--Fim da NavBar-->
+
+      <br><br>
+
+        <!--Container cursos-->
+        <div class=" container myContainer">
+        <h3 class="display-6"><i class="bi bi-pc-display-horizontal pe-2"></i>Desenvolvimento de Sistemas</h3>
+        <br>
+
+        <p class="lead">Informações Gerais</p>
+
+        <!-- Início Accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <h4 class="display-6">Curso</h4>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <h6 class="display-6">Objetivo</h6>
+                    <p class="lead">Formar  profissional atualizado, com visão crítica, pautada pela multidisciplinaridade, pelo raciocínio lógico e pelo método científico. Além de um cidadão 
+                    ético e preparado para seguir os estudos na Academia, pretende-se que este seja versátil, consciente e responsável, tenha  visão de futuro,  perfil 
+                    integrador, inovador e criativo para a identificação e resolução de problemas, com atuação empreendedora, colaborativa e abrangente no atendimento às 
+                    demandas do mundo do trabalho e da sociedade.</p>
+                    <h6 class="display-6">Perfil do profissional</h6>
+                    <p class="lead">O Técnico em Desenvolvimento de Sistemas busca inovações no desenvolvimento de software para as mais diversas áreas do mercado; desenvolve aplicações 
+                    desktop, web e para dispositivos móveis por meio de  métodos de análise, projeto e programação envolvendo modelagem e acesso a banco de dados, além de 
+                    testes em programas de computador.</p>
+                    <h6 class="display-6">Áreas de Atuação</h6>
+                    <p class="lead">O profissional de Desenvolvimento de Sistemas poderá atuar na área de Tecnologia da Informação de empresas privadas ou governamentais, ou mesmo de forma 
+                    autônoma, empreendendo seu próprio negócio. Poderá desempenhar inúmeros papéis no processo de desenvolvimento de software, como análise, projeto, 
+                    implementação, testes e implantação de sistemas, além de treinamento e suporte aos usuários.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <h4 class="display-6">Disciplinas</h4>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul class="lead">
+                        <li>Análise e Projeto de Sistemas</li>
+                        <li>Banco de Dados</li>
+                        <li>Desenvolvimento de Aplicação Web</li>
+                        <li>Lógica de Programação</li>
+                        <li>Linguagem de Programação Multiplataforma</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <!--Fim Accordion-->
+        </div>
+        <!--Fim do container cursos-->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>l
