@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Cotil - Unicamp </title>
+        
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+        crossorigin="anonymous">
+        <!--Import de icones-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+        <style type="text/css">
+            .myContainer{
+                background-color: #d73641;
+                border-radius: 5px;
+                padding: 20px;
+            }
+            .card img{
+              height: 250px;
+            }
+            .card{
+              margin-bottom: 20px;
+            }
+        </style>
+    </head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="imagens/unicampBranco.png" width="40px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="ExBootStrap.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nossaEscola.html">Nossa Escola</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="informatica.html">Desenvolvimento de Sistemas</a></li>
+                  <li><a class="dropdown-item" href="edificcoes.html">Edificações</a></li>
+                  <li><a class="dropdown-item" href="enfermagem.html">Enfermagem</a></li>
+                  <li><a class="dropdown-item" href="geodesia.html">Geodesia</a></li>
+                  <li><a class="dropdown-item" href="mecanica.html">Mecanica</a></li>
+                  <li><a class="dropdown-item" href="qualidade.html">Qualidade</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="estagios.html">Estágios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="contato.html"> Contato </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button type="button" class="btn btn-outline-danger"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--Fim da NavBar-->
+
+      <br><br>
+
+        <!--Container cursos-->
+        <div class=" container myContainer">
+        <h3 class="display-6"><i class="bi bi-pc-display-horizontal pe-2"></i>Contato</h3>
+        <br>
+
+        <p class="lead">Preencha o formulário abaixo</p>
+
+        <form>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <label class="form-label">Nome: </label><br>
+                <input type="text" name="nome" class="form-control">
+            </div>
+
+            <br> 
+
+            <div class="col-md-4">
+                <label class="form-label">E-mail: </label><br>
+                <input type="text" name="email" class="form-control"> 
+            </div>
+
+            <br> 
+            
+            <div class="col-md-2">
+                <label class="form-label">Telefone: </label><br>
+                <input type="text" name="tel" class="form-control">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <label class="form-label">Cidade: </label><br>
+                <input type="text" name="cidade" class="form-control">
+            </div>
+
+            <br> 
+
+            <div class="col-md-4">
+                <label class="form-label">Estado: </label><br>
+                <select class="form-select">
+                    <option></option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="col-md-2">
+                <label class="form-label">Cep: </label><br>
+                <input type="text" name="cep" class="form-control">
+            </div>
+        </div>
+
+            <br>
+
+        <div class="row">
+            <div class="col-12">
+                <label class="form-label">Mensagem: </label><br>
+                <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <br>
+
+            <input type="button" value="Enviar" class="btn btn-outline-dark">
+            <input type="button" value="Limpar" class="btn btn-outline-dark">
+        </form>
+        <!--Fim Cursos-->
+        </div>
+
+        <br>
+
+        <!--Container cursos-->
+        <div class=" container myContainer">
+            <h3 class="display-6"><i class="bi bi-pc-display-horizontal pe-2"></i>Localização</h3>
+            <br>
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58942.53663812317!2d-47.3829682981201!3d-22.582523794299423!2m3
+            !1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1668013334020!5m2!1spt-BR!2sbr" width="100%" height="500px" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--Fim Cursos-->
+            </div>
+</body>
+</html>
