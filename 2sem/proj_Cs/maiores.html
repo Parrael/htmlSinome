@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
     crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 </head>
 <body>
@@ -20,11 +22,32 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link me-1" aria-current="page" href="index.html">Sobre o Cs</a>
-              <a class="nav-link me-1" href="times.html">Times Brasileiros</a>
-              <a class="nav-link active me-1 disabled" href="maiores.html">Maiores da História</a>
-              <a class="nav-link me-1" href="major.html">O Major do Brasil</a>
-              <a class="nav-link me-1" href="sorteio.html">Sorteio</a>
+              <a class="nav-link me-1 pt-3" aria-current="page" href="index.html">Sobre o Cs</a>
+              <!--Inicio-->
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown me-1">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Times brasileiros
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="times.html">Página dos times</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/00nation.html">00nation</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/furia.html">Furia</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/mibr.html">Mibr</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/9z.html">9z</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/imperial.html">Imperial</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/pain.html">Pain</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <!--Inicio-->
+              <a class="nav-link active me-1 pt-3 disabled" href="maiores.html">Maiores da História</a>
+              <a class="nav-link me-1 pt-3" href="major.html">O Major do Brasil</a>
+              <a class="nav-link me-1 pt-3" href="sorteio.html">Sorteio</a>
             </div>
           </div>
         </div>
@@ -71,7 +94,8 @@
           </div>
           <div class="col-sm-8">            
             <span class="lead fw-semibold"><br>Luminosity Gaming (muitas vezes abreviado para LG) é uma organização canadense de esportes eletrônicos. Foi fundada em fevereiro de 2015 por Steve Maida.<br>A Luminosity Gaming se sagrou campeã mundial de CSGO em 2015, vencendo a MLG Columbus 2016 - o primeiro major vencido por uma equipe brasileira na versão moderna do FPS.<br><br>FalleN ∙ TACO ∙ coldzera ∙ fnx ∙ fer<br><br><br>SK Gaming é uma organização alemã de e-sports. Fundada em 1997 sob o nome de "Schroet Kommando" em Oberhausen, Alemanha, são conhecidas principalmente por seu enorme sucesso de CSGO. Mesmo time que em 2015 com a LG, foram responsáveis pela vitória do segundo e ultimo Major brasileiro<br><br>fer · fnx · FalleN · coldzera · TACO
-          </div>
+            </div>
+            
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 

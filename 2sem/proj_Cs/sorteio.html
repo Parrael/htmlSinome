@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
     crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     
 </head>
@@ -21,11 +23,32 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link me-1" aria-current="page" href="index.html">Sobre o Cs</a>
-              <a class="nav-link me-1" href="times.html">Times Brasileiros</a>
-              <a class="nav-link me-1" href="maiores.html">Maiores da História</a>
-              <a class="nav-link me-1" href="major.html">O Major do Brasil</a>
-              <a class="nav-link active me-1 disabled" href="sorteio.html">Sorteio</a>
+              <a class="nav-link me-1 pt-3" aria-current="page" href="index.html">Sobre o Cs</a>
+              <!--Inicio-->
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown me-1">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Times brasileiros
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="times.html">Página dos times</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/00nation.html">00nation</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/furia.html">Furia</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/mibr.html">Mibr</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/9z.html">9z</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/imperial.html">Imperial</a></li>
+                        <li><a class="dropdown-item" href="pasta_times/pain.html">Pain</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <!--Inicio-->
+              <a class="nav-link me-1 pt-3" href="maiores.html">Maiores da História</a>
+              <a class="nav-link me-1 pt-3" href="major.html">O Major do Brasil</a>
+              <a class="nav-link active me-1 pt-3 disabled" href="sorteio.html">Sorteio</a>
             </div>
           </div>
         </div>
@@ -35,7 +58,7 @@
 
       <!--Inicio forms sorteio-->
       <div class="container bg-dark">
-        <h5 class="display-6 fw-bold pt-3">Sorteio de ingressos para a grande final major</h5>
+        <h5 class="display-6 fw-bold pt-3"><i class="bi bi-ticket-perforated me-2"></i>Sorteio de ingressos para a grande final major</h5>
         <p class="lead fw-semibold pt-1">Preencha o formulário abaixo para concorrer</p>
 
         <br>
@@ -44,8 +67,11 @@
           <!--Primeira linha-->
           <div class="row">
             <div class="col-sm-12 col-md-8">
-              <label class="form-label">Nome: </label><br>
-              <input type="text" name="nome" class="form-control" required>
+              <label for="validationCustom01" class="form-label">Nome Completo:</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+              <div class="valid-feedback">
+                Concluído
+              </div>
             </div>
 
             <div class="col-md-4">
@@ -84,8 +110,15 @@
             </div>
 
             <div class="col-md-4">
-              <label class="form-label">Estado: </label><br>
-              <input type="tel" name="estado" class="form-control" required>
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Escolha...</option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>Minas Gerais</option>
+                <option>Pernanbuco</option>
+                <option>Bahia</option>
+              </select>
             </div>
 
             <div class="col-md-4">
@@ -98,14 +131,18 @@
 
           <!--Quarta linha-->
           <div class="row">
-            <div class="col-sm-12 col-md-4">
-              <label class="form-label">Concorda com os termos do sorteio? </label><br>
-              <input type="radio" name="termos">
-              <label class="form-label">Sim</label>
-              <input type="radio" name="termos">
-              <label class="form-label">Não</label>
+            <div class="col-sm-12 col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Concorda com os termos?
+                </label>
+                <div class="invalid-feedback">
+                  É preciso concordar para participar.
+                </div>
+              </div>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-9">
               <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="popover" data-bs-title="Termos do sorteio" 
               data-bs-content="O sorteio inclui somente o ingresso, não a hospedagem e transprote. Além diso, é preciso ter mais de 18 anos para 
               participar. É preciso que o ganhador responda o e-mail que receberá em até 5 dias úteis. Caso o ganhador não cumpra as regras o 
@@ -129,6 +166,28 @@
     <script>
       const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
       const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
     </script>
 </body>
 </html>
