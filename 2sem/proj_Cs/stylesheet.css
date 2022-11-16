@@ -8,8 +8,11 @@ body{
   padding: 30px;
 }
 .sorteio{
-  background-image: url("imagens/fundo3.jpg");
+  background-image: url("imagens/backgroundCs4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .container2{
   background-color: #333131;
 }
